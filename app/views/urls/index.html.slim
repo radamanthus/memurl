@@ -1,0 +1,7 @@
+doctype html
+html
+  body
+    = form_for @url do |f|
+      = f.label       :URL
+      = f.text_field  :url
+      = f.submit "Create Shortened URL", id:"create_url"

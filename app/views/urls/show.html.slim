@@ -1,0 +1,13 @@
+doctype html
+html
+  body
+    h2
+      Original URL
+    p
+      = @url.url
+
+    h2 Shortened URL
+
+    p
+      = "#{Settings.protocol}://#{Settings.hostname}/#{@url.shortened_url}"
+
