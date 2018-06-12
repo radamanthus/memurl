@@ -1,0 +1,37 @@
+Features tests
+
+- Submitting a new URL should return a shortened URL
+- Hitting a shortened URL should end up in the original URL
+- Stats should be collected and presented in the API endpoint
+
+---
+
+Controllers
+
+url CRUD - in home page
+
+/stats API endpoint
+
+---
+
+Data model
+
+- urls
+  - id
+  - url
+  - shortened_url
+  - timestamp
+
+- url_hits
+  - id
+  - url_id
+  - remote_ip
+  - headers
+
+Let's see what we can get from headers first. If possible we want to get these:
+  - browser
+  - os
+  - HTTP referer
+  - timestamp
+
+---
