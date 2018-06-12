@@ -1,0 +1,11 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+
+development:
+  <<: *default
+  database: memurl_development
+
+test:
+  <<: *default
+  database: memurl_test
