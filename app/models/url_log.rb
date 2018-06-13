@@ -1,3 +1,5 @@
+require 'useragent'
+
 class UrlLog < ApplicationRecord
   belongs_to :url
 

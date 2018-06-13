@@ -9,7 +9,7 @@ RSpec.feature "Stats", type: :feature do
 
     visit "/stats/#{u.shortened_url}"
 
-    parsed_body = JSON.parse(response.body)
+    parsed_body = JSON.parse(page.html)
     expect(parsed_body['total_hits']).to equal(3)
   end
 
