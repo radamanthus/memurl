@@ -1,5 +1,5 @@
 class UrlShortener
-  HASHID_ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+  HASHID_ALPHABET = ('a'..'z').to_a.join + ('0'..'9').to_a.join
 
   # This gives a maximum of 60M unique short URLs
   # but short URLs are easier to type and pass around
