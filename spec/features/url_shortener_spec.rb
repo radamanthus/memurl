@@ -18,5 +18,6 @@ RSpec.describe "short URL redirect", type: :request do
 
     get "/#{url.shortened_url}"
     expect(response).to redirect_to(url.url)
+    expect(url.logs.length).to be > 0
   end
 end
