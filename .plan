@@ -50,3 +50,5 @@ This is not a test if I will use https://github.com/jpmcgrath/shortener, right?
 + Shortened URLs should be redirected - create HomeController
 
 Log hits to shortened urls
+
+Implement /stats
