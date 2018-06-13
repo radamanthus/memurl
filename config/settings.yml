@@ -1,3 +1,4 @@
-hash_id_salt: xhgfim23
-hostname: memurl.com
-protocol: http
+default_protocol: http
+hash_id_salt:     xhgfim23
+hostname:         memurl.com
+protocol:         http
