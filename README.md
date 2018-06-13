@@ -1,6 +1,6 @@
 # README
 
-memurl is a URL shortening service. Give it an arbitrary URL and it will give back an easy-to-write-down URL.
+memurl is a URL shortening service. Give it an arbitrary URL and it will give back an easy-to-write-down URL. Hitting the short URL will redirect to the original URL.
 
 memurl will also collect some stats on the shortened URL. For each visit, the following will be recorded:
 - Referrer
