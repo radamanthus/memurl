@@ -49,6 +49,9 @@ gem 'hashids'
 # Load application settings from YAML files
 gem 'config'
 
+# For parsing the HTTP User Agent field
+gem 'useragent'
+
 group :development do
   gem 'pry'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.

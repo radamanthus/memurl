@@ -51,4 +51,7 @@ This is not a test if I will use https://github.com/jpmcgrath/shortener, right?
 
 + Log hits to shortened urls
 
++ Extract os and browser from user_agent
+
 Implement /stats
+
