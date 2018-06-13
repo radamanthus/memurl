@@ -2,14 +2,7 @@ class StatsController < ApplicationController
   def index
     url = Url.where(shortened_url: params[:shorturl]).first
     if url
-      # TODO: Put this in a dedicated class
-      json_response = {
-        url: url.url,
-        short_url: url.shortened_url,
-        created_at: url.created_at,
-        total_hits: url.logs.count
-      }.to_json
-      render inline: json_response
+      render inline: UrlStats.for(url).to_json
     else
       @shorturl = params[:shorturl]
       render 'home/404'
