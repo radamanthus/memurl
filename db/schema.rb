@@ -18,7 +18,10 @@ ActiveRecord::Schema.define(version: 2018_06_13_030728) do
   create_table "url_logs", force: :cascade do |t|
     t.integer "url_id"
     t.string "remote_ip"
-    t.string "headers"
+    t.string "user_agent"
+    t.string "browser"
+    t.string "os"
+    t.string "referer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
