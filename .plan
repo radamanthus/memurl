@@ -42,9 +42,11 @@ This is not a test if I will use https://github.com/jpmcgrath/shortener, right?
 
 20180613
 
-Unit test for UrlShortener
++ Unit test for UrlShortener
 
-Controller test for url controller
++ Url
 - add the default protocol, "http://", if the user did not add it to the URL
 
-Shortened URLs should be redirected - create HomeController
++ Shortened URLs should be redirected - create HomeController
+
+Log hits to shortened urls

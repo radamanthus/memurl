@@ -9,4 +9,14 @@ RSpec.feature "URL shortening", type: :feature do
     expect(page).to have_text "Shortened URL"
     expect(page).to have_content("http://", count: 2)
   end
+
+end
+
+RSpec.describe "short URL redirect", type: :request do
+  it "redirects a shortened URL to the full URL" do
+    url = Url.create(url: "http://goo.gl", shortened_url:"ABCDE")
+
+    get "/#{url.shortened_url}"
+    expect(response).to redirect_to(url.url)
+  end
 end

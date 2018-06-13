@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root to: 'urls#index'
+  root to: 'home#index'
+  get '/:shorturl', to: 'home#redirect'
 
   resources :urls
 end

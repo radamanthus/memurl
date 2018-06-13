@@ -1,8 +1,4 @@
 class UrlsController < ApplicationController
-  def index
-    @url = Url.new
-  end
-
   def show
     @url = Url.find(params[:id])
   end
