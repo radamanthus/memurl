@@ -1,4 +1,7 @@
 class Url < ApplicationRecord
+  has_many :url_logs
+  alias_attribute :logs, :url_logs
+
   before_create :append_default_protocol
   after_create :generate_short_url
 
