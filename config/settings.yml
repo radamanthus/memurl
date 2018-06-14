@@ -1,4 +1,4 @@
 default_protocol: http
 hash_id_salt:     xhgfim23
-hostname:         memurl.com
+hostname:         ms-url-shortener-radamanthus.herokuapp.com
 protocol:         http
