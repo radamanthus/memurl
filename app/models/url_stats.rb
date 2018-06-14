@@ -4,7 +4,7 @@
 #
 # Example usage:
 #
-# u = Url.find_by_short_id('l0ol0')
+# u = Url.find_by_shortened_url('l0ol0')
 # UrlStats.for(u)
 #
 class UrlStats
