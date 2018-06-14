@@ -4,9 +4,11 @@
 #
 # We use the Hashid gem to generate a hashcode from the url ID
 #
-# We use smallcase letters and numbers only.
+# We use 5 smallcase letters and numbers only.
 # This gives a maximum of 60M unique short URLs
 # but short URLs are easier to type and pass around.
+# Increase the number of characters, or
+# increase the alphabet size to accomodate more unique URLs
 #
 class UrlShortener
   HASHID_ALPHABET = ('a'..'z').to_a.join + ('0'..'9').to_a.join
