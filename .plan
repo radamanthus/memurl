@@ -55,3 +55,8 @@ This is not a test if I will use https://github.com/jpmcgrath/shortener, right?
 
 Implement /stats
 
++ total_hits
+- browser breakdown
+- os breakdown
+- hits breakdown over the last 7 days
+

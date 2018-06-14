@@ -1,5 +1,12 @@
 # frozen_string_literal: true
 
+# Business logic class for preparing stats for a Url object
+#
+# Example usage:
+#
+# u = Url.find_by_short_id('l0ol0')
+# UrlStats.for(u)
+#
 class UrlStats
   def self.for(url)
     total_hits = url.logs.count
