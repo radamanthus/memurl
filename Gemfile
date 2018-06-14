@@ -43,16 +43,16 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
-gem 'slim'
+gem 'slim', '3.0.9'
 
 # For generating shortened URLs
-gem 'hashids'
+gem 'hashids', '1.0.4'
 
 # Load application settings from YAML files
-gem 'config'
+gem 'config', '1.7.0'
 
 # For parsing the HTTP User Agent field
-gem 'useragent'
+gem 'useragent', '0.16.10'
 
 group :development do
   gem 'pry'
