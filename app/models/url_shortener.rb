@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class UrlShortener
   HASHID_ALPHABET = ('a'..'z').to_a.join + ('0'..'9').to_a.join
 

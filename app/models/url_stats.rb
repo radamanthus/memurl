@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class UrlStats
   def self.for(url)
     total_hits = url.logs.count

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class StatsController < ApplicationController
   def index
     url = Url.where(shortened_url: params[:shorturl]).first

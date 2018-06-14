@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'useragent'
 
 class UrlLog < ApplicationRecord

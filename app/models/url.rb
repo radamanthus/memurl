@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Url < ApplicationRecord
   has_many :url_logs
   alias_attribute :logs, :url_logs
