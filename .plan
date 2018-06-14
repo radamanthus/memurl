@@ -56,7 +56,9 @@ This is not a test if I will use https://github.com/jpmcgrath/shortener, right?
 Implement /stats
 
 + total_hits
-- browser breakdown
-- os breakdown
-- hits breakdown over the last 7 days
++ hits as an array
+
+Add optional user authentication
+- url has user_id - we track who created what url
+- creating a new url object does not require authentication - authentication is optional
 
