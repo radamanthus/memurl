@@ -8,8 +8,6 @@ class UrlsController < ApplicationController
   def create
     @url = Url.new
     @url.url = params[:url][:url]
-    if @url.save
-      redirect_to url_path(@url)
-    end
+    redirect_to url_path(@url) if @url.save
   end
 end
