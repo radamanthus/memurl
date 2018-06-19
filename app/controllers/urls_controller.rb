@@ -8,6 +8,11 @@ class UrlsController < ApplicationController
   def create
     @url = Url.new
     @url.url = params[:url][:url]
-    redirect_to url_path(@url) if @url.save
+    if @url.save
+      redirect_to url_path(@url)
+    else
+      flash[:error] = 'Please type a valid URL'
+      redirect_to root_path
+    end
   end
 end

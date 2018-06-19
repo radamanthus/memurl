@@ -1,6 +1,7 @@
 doctype html
 html
   body
+    = flash[:error]
     = form_for @url do |f|
       = f.label       :URL
       = f.text_field  :url
