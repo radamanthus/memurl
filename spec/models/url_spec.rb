@@ -3,10 +3,17 @@
 require 'rails_helper'
 
 describe Url do
-  it 'appends a default protocol to the url field if none was specified' do
-    u = Url.new
-    u.url = 'google.com'
-    u.save
-    expect(u.url).to include("#{Settings.default_protocol}://")
+  context 'a Url with a non-empty url' do
+    let(:url) { create :url, :non_empty_url }
+    it 'appends a default protocol to the url field if none was specified' do
+      expect(url.url).to include("#{Settings.default_protocol}://")
+    end
+  end
+
+  context 'a Url with an empty url' do
+    let(:url) { build :url, :empty_url }
+    it 'is not valid' do
+      expect(url.valid?).to be(false)
+    end
   end
 end

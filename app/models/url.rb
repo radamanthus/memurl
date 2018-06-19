@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Url < ApplicationRecord
+  validates_presence_of :url
+
   has_many :url_logs
   alias_attribute :logs, :url_logs
 

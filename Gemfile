@@ -74,6 +74,7 @@ group :test do
   gem 'rspec', '3.7.0'
   gem 'rspec-rails', '3.7.2'
   gem 'rails-controller-testing', '1.0.2'
+  gem 'factory_bot_rails', '4.10.0'
 
   gem 'simplecov', '0.16.1'
 end
